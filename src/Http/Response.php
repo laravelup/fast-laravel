@@ -40,6 +40,7 @@ class Response
 
         $laravelResponse = $this -> kernel -> handle($request);
         $laravelResponse->send();
+        $this -> terminate($request,$laravelResponse);
         $content = ob_get_contents();
         ob_end_clean();
 
