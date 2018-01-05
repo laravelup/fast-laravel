@@ -74,7 +74,7 @@ class Callback
         if($uri == '/favicon.ico') {
             $swooleResponse -> end('favicon.ico');
         }else{
-            $content            = (new Response($this -> kernel)) -> create(\Illuminate\Http\Request::capture(),$swooleResponse);
+            $content            = (new Response($this -> kernel)) -> create($laravelRequest,$swooleResponse);
             $swooleResponse -> end($content);
         }
     }

@@ -4,7 +4,7 @@
 # 要求
 - [x] PHP >= 5.6.4
 - [x] swoole >= 1.9.0
-- [x] laravel >= 5.2.0
+- [x] laravel >= 5.5.0
 # 安装
 ```
 composer require laravelup/fast-laravel dev-master
