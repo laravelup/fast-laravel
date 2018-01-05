@@ -56,10 +56,10 @@ class Response
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @param \Illuminate\Http\Response $response
+     * @param $response
      * 终止中间件
      */
-    public function terminate(\Illuminate\Http\Request $request, \Illuminate\Http\Response $response)
+    public function terminate(\Illuminate\Http\Request $request, $response)
     {
         $this -> kernel ->terminate($request, $response);
     }
