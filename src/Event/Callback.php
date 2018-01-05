@@ -107,10 +107,8 @@ class Callback
         }
 
         $path           = base_path('bootstrap');
-        require_once $path . '/autoload.php';
         $app            = require $path . '/app.php';
         $this -> kernel = $app -> make(Kernel::class);
-        echo date('Y-m-d H:i:s') . PHP_EOL;
     }
 
     public function onManagerStart()
