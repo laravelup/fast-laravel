@@ -19,16 +19,19 @@ interface ServerInterface
 
     /**
      * @return mixed
+     * 启动
      */
     public function start();
 
     /**
      * @return mixed
+     * 热更新
      */
     public function reload();
 
     /**
      * @return mixed
+     * 停止
      */
     public function stop();
 }
